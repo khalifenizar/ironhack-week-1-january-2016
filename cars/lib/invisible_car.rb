@@ -3,6 +3,8 @@
 class InvisibleCar < Car
   def rev
     puts "Cloaking activated #{@color} #{@make}"
-    puts @sound
+
+    # call Car's rev method
+    super
   end
 end
