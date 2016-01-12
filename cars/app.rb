@@ -2,6 +2,7 @@
 
 require_relative("lib/car.rb")
 require_relative("lib/flying_car.rb")
+require_relative("lib/invisible_car.rb")
 
 
 # variable and methods names should be lowercase_with_underscores
@@ -19,3 +20,7 @@ matts_mazda.rev
 my_flying_car = FlyingCar.new("blue", "Tesla", "swoosh")
 my_flying_car.rev
 my_flying_car.fly
+
+
+my_invisible_car = InvisibleCar.new("camo", "Ford", "prrrrrt")
+my_invisible_car.rev
