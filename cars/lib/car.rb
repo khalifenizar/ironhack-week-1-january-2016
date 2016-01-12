@@ -2,12 +2,13 @@
 
 # class names should be CapitalizedLikeThis
 class Car
-  def initialize(color, make)
+  def initialize(color, make, sound)
     @color = color
     @make = make
+    @sound = sound
   end
 
   def rev
-    puts "Vroooooom"
+    puts @sound
   end
 end
