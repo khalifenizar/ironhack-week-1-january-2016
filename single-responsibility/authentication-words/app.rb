@@ -1,6 +1,7 @@
 # app.rb
 
 require_relative("lib/authenticator.rb")
+require_relative("lib/word_counter.rb")
 
 auth = Authenticator.new("nizar", "swordfish")
 
@@ -20,7 +21,9 @@ if auth.valid_credentials?(username, password)
 
   puts "\n-----\n"
 
-  puts "The entered text has _42_ words."
+  counter = WordCounter.new(text)
+
+  puts "The entered text has _#{counter.word_count}_ words."
 else
   puts "WRONG! Get out of here!"
 end
